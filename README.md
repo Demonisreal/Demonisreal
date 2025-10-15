@@ -9,6 +9,7 @@
 - SQL
 - Python
 - JavaScript & NodeJS
+- React & TypeScript
 - Lua
 
 ## 🏆 Erfolge
