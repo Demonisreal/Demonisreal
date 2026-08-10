@@ -1,7 +1,7 @@
 # Willkommen auf meinem GitHub Profil! 👋
 
 ## Über mich
-🧑‍💻 Fachinformatiker für Anwendungsentwicklung | 20 Jahre alt
+🧑‍💻 Fachinformatiker für Anwendungsentwicklung | 21 Jahre alt
 🚒 Aktives Mitglied der Freiwilligen Feuerwehr
 
 ## 💻 Tech Stack
