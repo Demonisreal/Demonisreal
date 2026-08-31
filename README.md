@@ -1,26 +1,17 @@
-# Willkommen auf meinem GitHub Profil! 👋
+## Leon Wydra
 
-## Über mich
-🧑‍💻 Fachinformatiker für Anwendungsentwicklung | 21 Jahre alt
-🚒 Aktives Mitglied der Freiwilligen Feuerwehr
+Fachinformatiker für Anwendungsentwicklung. Ich baue Webanwendungen mit TypeScript —
+vom Datenmodell bis zur Oberfläche.
 
-## 💻 Tech Stack
-- PHP & Laravel
-- SQL
-- Python
-- JavaScript & NodeJS
-- React & TypeScript
-- Lua
+**Schwerpunkte:** TypeScript, Next.js, NestJS, PostgreSQL, Supabase, Docker.
+Beruflich außerdem PHP/Laravel.
 
-## 🏆 Erfolge
-- Entwicklung eines umfangreichen Intranets im beruflichen Kontext
-- Kombination von IT-Expertise mit ehrenamtlichem Engagement
+### Ausgewählte Arbeit
 
-## 🔧 Skills
-- Webentwicklung
-- Datenbankdesign
-- Backend-Entwicklung
-- Anwendungsentwicklung
+**[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)** — Dokumente hochladen,
+mit ihnen chatten, und jede Aussage über einen Beleg zurück in die Quelle verfolgen.
+Hybride Suche aus Vektor- und Volltextsuche über pgvector, Antworten im Stream, Row Level
+Security auf Datenbankebene. Läuft selbst gehostet unter
+[notebook.dmn-software.com](https://notebook.dmn-software.com).
 
-## 📊 GitHub Statistiken
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Demonisreal&show_icons=true&theme=dark)
+Im Beruf: Entwicklung und Betrieb eines unternehmensweiten Intranets.
