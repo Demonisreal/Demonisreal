@@ -20,3 +20,5 @@ Koordination eines Learning Management Systems (Laravel, React) und einer App zu
 Identitätsverifizierung, die bundesweit bei rund 130 Gesundheitsämtern läuft.
 
 Nebenberuflich als Kleingewerbe DMN Software: individuelle Kundenprojekte mit Lua, React und Vue.
+
+Erreichbar über [LinkedIn](https://www.linkedin.com/in/leon-wydra/).
