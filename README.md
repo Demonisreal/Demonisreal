@@ -1,6 +1,6 @@
 ## Leon
 
-Full stack developer. I build web applications in TypeScript — from the data model up to the
+Full stack developer. I build web applications in TypeScript from the data model up to the
 interface, lately mostly with SvelteKit and Supabase.
 
 **Focus:** TypeScript, React, Next.js, SvelteKit, NestJS, PostgreSQL, Supabase, Docker.
