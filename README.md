@@ -1,24 +1,26 @@
 ## Leon
 
-Full Stack Entwickler. Ich baue Webanwendungen mit TypeScript — vom Datenmodell bis zur
-Oberfläche, zuletzt vor allem mit SvelteKit und Supabase.
+Full stack developer. I build web applications in TypeScript — from the data model up to the
+interface, lately mostly with SvelteKit and Supabase.
 
-**Schwerpunkte:** TypeScript, React, Next.js, SvelteKit, NestJS, PostgreSQL, Supabase, Docker.
-Beruflich außerdem PHP/Laravel und native Apps mit Capacitor.
+**Focus:** TypeScript, React, Next.js, SvelteKit, NestJS, PostgreSQL, Supabase, Docker.
+At work also PHP/Laravel and native apps with Capacitor.
 
-### Ausgewählte Arbeit
+### Selected work
 
-**[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)** — Dokumente hochladen,
-mit ihnen chatten, und jede Aussage über einen Beleg zurück in die Quelle verfolgen.
-Hybride Suche aus Vektor- und Volltextsuche über pgvector, Antworten im Stream, Row Level
-Security auf Datenbankebene. Läuft selbst gehostet unter
-[notebook.dmn-software.com](https://notebook.dmn-software.com).
+**[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)** — upload documents, chat
+with them, and trace every statement back to the passage it came from. Hybrid search combining
+vector and full text search over pgvector, streamed answers, Row Level Security enforced in the
+database. Self-hosted at [notebook.dmn-software.com](https://notebook.dmn-software.com); how the
+retrieval works is written up in
+[docs/hybrid-search.md](https://github.com/Demonisreal/notebooklm-clone/blob/main/docs/hybrid-search.md).
 
-Im Beruf: eine Plattform für Pflegefachkräfte mit SvelteKit, Supabase und Capacitor, im
-täglichen Einsatz und auch als native App für iOS und Android ausgeliefert. Davor die technische
-Koordination eines Learning Management Systems (Laravel, React) und einer App zur
-Identitätsverifizierung, die bundesweit bei rund 130 Gesundheitsämtern läuft.
+At work: a platform for care professionals built with SvelteKit, Supabase and Capacitor, in daily
+use and shipped as a native app for iOS and Android. Before that, the technical coordination of a
+learning management system (Laravel, React) and of an identity verification app that runs at
+around 130 public health offices across Germany.
 
-Nebenberuflich als Kleingewerbe DMN Software: individuelle Kundenprojekte mit Lua, React und Vue.
+On the side, as the sole proprietorship DMN Software: individual client projects with Lua, React
+and Vue.
 
-Erreichbar über [LinkedIn](https://www.linkedin.com/in/leon-wydra/).
+Reachable on [LinkedIn](https://www.linkedin.com/in/leon-wydra/).
