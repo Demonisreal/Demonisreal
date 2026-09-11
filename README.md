@@ -9,7 +9,6 @@
 <br />
 
 <a href="https://www.linkedin.com/in/leon-wydra/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="mailto:YOUR-EMAIL-HERE"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="https://notebook.dmn-software.com"><img src="https://img.shields.io/badge/NotebookLM_clone-3FCF8E?style=for-the-badge&logo=googledocs&logoColor=white" alt="NotebookLM clone — live" /></a>
 <a href="https://minigames.dmn-software.com"><img src="https://img.shields.io/badge/Minigames-FF6B00?style=for-the-badge&logo=gamejolt&logoColor=white" alt="Minigames — live" /></a>
 
