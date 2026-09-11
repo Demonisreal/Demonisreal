@@ -1,16 +1,16 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=190&section=header&text=Leon%20Wydra&fontSize=52&fontColor=ffffff&fontAlignY=34&desc=React%20%C2%B7%20Node.js%20%C2%B7%20TypeScript%20%E2%80%94%20full%20stack%2C%20data%20model%20to%20interface&descAlignY=56&descSize=17" width="100%" alt="Leon Wydra — React, Node.js, TypeScript" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=190&section=header&text=Leon&fontSize=54&fontColor=ffffff&fontAlignY=34&desc=React%20%C2%B7%20Node.js%20%C2%B7%20TypeScript&descAlignY=56&descSize=19" width="100%" alt="Leon, React Node.js TypeScript" />
 
 <a href="https://readme-typing-svg.demolab.com">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=3178C6&center=true&vCenter=true&width=620&lines=React+%2B+Next.js+%2B+TypeScript;Node.js+%2B+NestJS+%2B+PostgreSQL;Hybrid+RAG+search+over+pgvector;Row+Level+Security+enforced+in+the+database" alt="React + Next.js + TypeScript · Node.js + NestJS + PostgreSQL · Hybrid RAG search over pgvector" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=3178C6&center=true&vCenter=true&width=620&lines=React+%2B+Next.js+%2B+TypeScript;Node.js+%2B+NestJS+%2B+PostgreSQL;Hybrid+RAG+search+over+pgvector;Row+Level+Security+enforced+in+the+database" alt="React + Next.js + TypeScript, Node.js + NestJS + PostgreSQL, hybrid RAG search over pgvector" />
 </a>
 
 <br />
 
 <a href="https://www.linkedin.com/in/leon-wydra/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://notebook.dmn-software.com"><img src="https://img.shields.io/badge/NotebookLM_clone-3FCF8E?style=for-the-badge&logo=googledocs&logoColor=white" alt="NotebookLM clone — live" /></a>
-<a href="https://minigames.dmn-software.com"><img src="https://img.shields.io/badge/Minigames-FF6B00?style=for-the-badge&logo=gamejolt&logoColor=white" alt="Minigames — live" /></a>
+<a href="https://notebook.dmn-software.com"><img src="https://img.shields.io/badge/NotebookLM_clone-3FCF8E?style=for-the-badge&logo=googledocs&logoColor=white" alt="NotebookLM clone, live" /></a>
+<a href="https://minigames.dmn-software.com"><img src="https://img.shields.io/badge/Minigames-FF6B00?style=for-the-badge&logo=gamejolt&logoColor=white" alt="Minigames, live" /></a>
 
 </div>
 
@@ -18,16 +18,16 @@
 
 ## Who I am
 
-**React, Node.js and TypeScript** across the whole stack — schema, API, interface, deployment.
+**React, Node.js and TypeScript** across the whole stack: schema, API, interface, deployment.
 One language from the database driver up to the button, which means the types that describe a row
 are the same types the component renders. I like the systems where the hard part sits in the data
-layer: retrieval, access control, migrations that survive contact with production.
+layer, so retrieval, access control, and migrations that survive contact with production.
 
-- 🔍 **[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)** — Next.js and NestJS over Postgres, hybrid vector + full-text retrieval → [try it](https://notebook.dmn-software.com)
-- 🎮 **[dmn_minigame](https://github.com/DMN-Software/dmn_minigame)** — React and Node, with a leaderboard that cannot be lied to: the server replays your inputs and computes the score itself
+- 🔍 **[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)**, Next.js and NestJS over Postgres with hybrid vector and full text retrieval. [Try it](https://notebook.dmn-software.com)
+- 🎮 **[dmn_minigame](https://github.com/DMN-Software/dmn_minigame)**, React and Node, with a leaderboard that cannot be lied to: the server replays your inputs and computes the score itself
 - 🏗️ At work: a **platform for care professionals**, in daily use and shipped as a native iOS and Android app
-- 🧭 Before that: **technical coordination** for an LMS and an identity-verification app used by ~130 German public health offices — both Laravel and React
-- 💼 Freelancing as **DMN Software** (sole proprietorship) — client projects in React, Vue and Lua
+- 🧭 Before that: **technical coordination** for an LMS and an identity verification app used by around 130 German public health offices, both Laravel and React
+- 💼 Freelancing as **DMN Software** (sole proprietorship) on client projects in React, Vue and Lua
 - 📫 Best reached on [LinkedIn](https://www.linkedin.com/in/leon-wydra/)
 
 ---
@@ -83,21 +83,21 @@ layer: retrieval, access control, migrations that survive contact with productio
 
 ## Selected work
 
-### 📓 [notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone) &nbsp;·&nbsp; [live demo ↗](https://notebook.dmn-software.com)
+### 📓 [notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone) &nbsp;·&nbsp; [live demo](https://notebook.dmn-software.com)
 
 > Upload your sources, chat with them, and trace every sentence of the answer back to the passage it came from.
 
-A self-hosted NotebookLM. The interesting part is not the chat window — it is the retrieval path,
+A self-hosted NotebookLM. The interesting part is not the chat window. It is the retrieval path,
 and the fact that authorisation is enforced by the database rather than by the API layer.
 
 |  |  |
 |---|---|
-| **Retrieval** | Hybrid search — vector similarity *and* full text, merged with Reciprocal Rank Fusion ([write-up](https://github.com/Demonisreal/notebooklm-clone/blob/main/docs/hybrid-search.md)) |
+| **Retrieval** | Hybrid search, vector similarity *and* full text, merged with Reciprocal Rank Fusion ([write-up](https://github.com/Demonisreal/notebooklm-clone/blob/main/docs/hybrid-search.md)) |
 | **Citations** | Numbered, clickable, scroll straight to the highlighted passage in the source |
-| **Security** | Row Level Security in Postgres; the browser never touches the database directly |
-| **Ingestion** | PDF, DOCX, TXT, Markdown, URLs, pasted text — processed in the background, status streamed over Supabase Realtime |
-| **Studio** | Generated briefings, FAQs, study guides, mind maps and AI-voiced audio overviews |
-| **Stack** | Next.js 16 · NestJS 11 · PostgreSQL 17 + pgvector 0.8 · Supabase · Gemini · Tailwind 4 |
+| **Security** | Row Level Security in Postgres. The browser never touches the database directly |
+| **Ingestion** | PDF, DOCX, TXT, Markdown, URLs, pasted text, processed in the background with status streamed over Supabase Realtime |
+| **Studio** | Generated briefings, FAQs, study guides, mind maps and AI voiced audio overviews |
+| **Stack** | Next.js 16, NestJS 11, PostgreSQL 17 with pgvector 0.8, Supabase, Gemini, Tailwind 4 |
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
@@ -105,21 +105,21 @@ and the fact that authorisation is enforced by the database rather than by the A
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
 ![MIT](https://img.shields.io/badge/License-MIT-informational?style=flat-square)
 
-### 🎮 [dmn_minigame](https://github.com/DMN-Software/dmn_minigame) &nbsp;·&nbsp; [play it ↗](https://minigames.dmn-software.com)
+### 🎮 [dmn_minigame](https://github.com/DMN-Software/dmn_minigame) &nbsp;·&nbsp; [play it](https://minigames.dmn-software.com)
 
 > Twelve minigames with a leaderboard that cannot be lied to.
 
-A browser leaderboard is normally an invitation — `POST /score {"score": 999999}`. The usual
-defences still validate a number the client made up. Here that number does not exist: the client
+A browser leaderboard is normally an invitation: `POST /score {"score": 999999}`. The usual
+defences still validate a number the client made up. Here that number does not exist. The client
 submits **the inputs it pressed**, and the server replays the run to compute the score itself.
 
 |  |  |
 |---|---|
-| **Anti-cheat** | Server-issued seed, client returns a delta-compressed input log, `replay()` produces the score — no score ever crosses the wire |
-| **Determinism** | Hand-rolled mulberry32 PRNG instead of `Math.random`, fixed 60 Hz ticks, no wall clock, no transcendental maths — client and server must agree bit for bit |
-| **One contract** | Every game is a `Sim` with `step(input)`, `score`, `over`. The UI only draws; the API never draws |
-| **Privacy** | IPs are only ever stored and rate-limited as `sha256(ip + salt)`; `trustProxy` deliberately scoped so `X-Forwarded-For` cannot be spoofed |
-| **Lean by choice** | 2 prod dependencies in the API, 2 in the frontend, `node:sqlite` from the standard library, no ORM, no build step on the server |
+| **Anti-cheat** | Server issued seed, client returns a delta compressed input log, `replay()` produces the score. No score ever crosses the wire |
+| **Determinism** | Hand rolled mulberry32 PRNG instead of `Math.random`, fixed 60 Hz ticks, no wall clock, no transcendental maths. Client and server must agree bit for bit |
+| **One contract** | Every game is a `Sim` with `step(input)`, `score`, `over`. The UI only draws, the API never draws |
+| **Privacy** | IPs are only ever stored and rate limited as `sha256(ip + salt)`, and `trustProxy` is deliberately scoped so `X-Forwarded-For` cannot be spoofed |
+| **Lean by choice** | Two prod dependencies in the API, two in the frontend, `node:sqlite` from the standard library, no ORM, no build step on the server |
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
@@ -133,18 +133,18 @@ submits **the inputs it pressed**, and the server replays the run to compute the
 
 |  | Role | What it was | Stack |
 |---|---|---|---|
-| **Now** | Full-Stack Developer | Platform for care professionals — in daily use, shipped as a native iOS and Android app | SvelteKit · Supabase · Capacitor |
-| **Before** | Technical coordination | Learning management system | Laravel · React |
-| **Before** | Technical coordination | Identity-verification app running at ~130 public health offices across Germany | Laravel · React |
-| **Alongside** | Owner, DMN Software | Individual client projects | Lua · React · Vue |
+| **Now** | Full-Stack Developer | Platform for care professionals, in daily use and shipped as a native iOS and Android app | SvelteKit, Supabase, Capacitor |
+| **Before** | Technical coordination | Learning management system | Laravel, React |
+| **Before** | Technical coordination | Identity verification app running at around 130 public health offices across Germany | Laravel, React |
+| **Alongside** | Owner, DMN Software | Individual client projects | Lua, React, Vue |
 
 ---
 
 ## How I work
 
 - **The schema comes first.** Constraints, foreign keys and Row Level Security in the database, so a bug in the API layer cannot turn into a data leak.
-- **Ship it, then read the logs.** The care platform went to the store and gets used every day; that feedback beats any staging environment.
-- **Write down the parts that are hard to re-derive.** Why the retrieval is hybrid, why RRF and not a weighted score — [that kind of thing](https://github.com/Demonisreal/notebooklm-clone/blob/main/docs/hybrid-search.md).
+- **Ship it, then read the logs.** The care platform went to the store and gets used every day. That feedback beats any staging environment.
+- **Write down the parts that are hard to re-derive.** Why the retrieval is hybrid, why RRF and not a weighted score, [that kind of thing](https://github.com/Demonisreal/notebooklm-clone/blob/main/docs/hybrid-search.md).
 - **One codebase, both platforms.** Capacitor over a separate Swift and Kotlin app, as long as the product does not need the difference.
 
 ---
@@ -153,7 +153,7 @@ submits **the inputs it pressed**, and the server replays the run to compute the
 
 ### Open to interesting work
 
-React, Node.js and TypeScript — ideally somewhere the database is treated as part of the design.
+React, Node.js and TypeScript, ideally somewhere the database is treated as part of the design.
 
 <a href="https://www.linkedin.com/in/leon-wydra/"><img src="https://img.shields.io/badge/Let%27s_talk-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Let's talk on LinkedIn" /></a>
 
