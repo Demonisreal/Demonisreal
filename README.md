@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=190&section=header&text=Leon%20Wydra&fontSize=52&fontColor=ffffff&fontAlignY=34&desc=Full-Stack%20Engineer%20%C2%B7%20TypeScript%20from%20the%20data%20model%20to%20the%20interface&descAlignY=56&descSize=17" width="100%" alt="Leon Wydra — Full-Stack Engineer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=190&section=header&text=Leon%20Wydra&fontSize=52&fontColor=ffffff&fontAlignY=34&desc=React%20%C2%B7%20Node.js%20%C2%B7%20TypeScript%20%E2%80%94%20full%20stack%2C%20data%20model%20to%20interface&descAlignY=56&descSize=17" width="100%" alt="Leon Wydra — React, Node.js, TypeScript" />
 
 <a href="https://readme-typing-svg.demolab.com">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=3178C6&center=true&vCenter=true&width=620&lines=SvelteKit+%2B+Supabase+%2B+Capacitor;Next.js+%2B+NestJS+%2B+PostgreSQL;Hybrid+RAG+search+over+pgvector;Row+Level+Security+enforced+in+the+database" alt="SvelteKit + Supabase + Capacitor · Next.js + NestJS + PostgreSQL · Hybrid RAG search over pgvector" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=3178C6&center=true&vCenter=true&width=620&lines=React+%2B+Next.js+%2B+TypeScript;Node.js+%2B+NestJS+%2B+PostgreSQL;Hybrid+RAG+search+over+pgvector;Row+Level+Security+enforced+in+the+database" alt="React + Next.js + TypeScript · Node.js + NestJS + PostgreSQL · Hybrid RAG search over pgvector" />
 </a>
 
 <br />
@@ -18,16 +18,16 @@
 
 ## Who I am
 
-I build web applications in TypeScript across the whole stack — schema, API, interface, deployment.
-Lately that means **SvelteKit and Supabase**, shipped as a real product to real users rather than a
-prototype. I like the systems where the hard part sits in the data layer: retrieval, access control,
-migrations that survive contact with production.
+**React, Node.js and TypeScript** across the whole stack — schema, API, interface, deployment.
+One language from the database driver up to the button, which means the types that describe a row
+are the same types the component renders. I like the systems where the hard part sits in the data
+layer: retrieval, access control, migrations that survive contact with production.
 
-- 🏗️ Currently building a **platform for care professionals** — SvelteKit, Supabase, Capacitor, live as a native iOS and Android app
-- 🔍 Side project: a **self-hosted NotebookLM** with hybrid vector + full-text retrieval → [try it](https://notebook.dmn-software.com)
-- 🎮 Also running: **twelve minigames** whose leaderboard [cannot be lied to](https://github.com/DMN-Software/dmn_minigame) — the server replays your inputs and computes the score itself
-- 🧭 Previously **technical coordination** for an LMS (Laravel/React) and an identity-verification app used by ~130 German public health offices
-- 💼 Freelancing as **DMN Software** (sole proprietorship) — client work in Lua, React and Vue
+- 🔍 **[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)** — Next.js and NestJS over Postgres, hybrid vector + full-text retrieval → [try it](https://notebook.dmn-software.com)
+- 🎮 **[dmn_minigame](https://github.com/DMN-Software/dmn_minigame)** — React and Node, with a leaderboard that cannot be lied to: the server replays your inputs and computes the score itself
+- 🏗️ At work: a **platform for care professionals**, in daily use and shipped as a native iOS and Android app
+- 🧭 Before that: **technical coordination** for an LMS and an identity-verification app used by ~130 German public health offices — both Laravel and React
+- 💼 Freelancing as **DMN Software** (sole proprietorship) — client projects in React, Vue and Lua
 - 📫 Best reached on [LinkedIn](https://www.linkedin.com/in/leon-wydra/)
 
 ---
@@ -38,40 +38,42 @@ migrations that survive contact with production.
 <tr>
 <td valign="top" width="50%">
 
-**Languages**
+**Main stack**
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
+![Fastify](https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=fastify&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-**Frontend**
+**Also shipped with**
 
 ![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)
 
 </td>
 <td valign="top" width="50%">
 
-**Backend & data**
+**Data**
 
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
 **Platform**
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white)
+![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 </td>
 </tr>
@@ -151,7 +153,7 @@ submits **the inputs it pressed**, and the server replays the run to compute the
 
 ### Open to interesting work
 
-Product engineering in TypeScript — ideally somewhere the database is treated as part of the design.
+React, Node.js and TypeScript — ideally somewhere the database is treated as part of the design.
 
 <a href="https://www.linkedin.com/in/leon-wydra/"><img src="https://img.shields.io/badge/Let%27s_talk-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Let's talk on LinkedIn" /></a>
 
