@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=190&section=header&text=Leon&fontSize=54&fontColor=ffffff&fontAlignY=34&desc=React%20%C2%B7%20Node.js%20%C2%B7%20TypeScript&descAlignY=56&descSize=19" width="100%" alt="Leon, React Node.js TypeScript" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=190&section=header&text=Leon&fontSize=54&fontColor=ffffff&fontAlignY=34&desc=React%20%C2%B7%20Node.js%20%C2%B7%20TypeScript%20%C2%B7%20Go&descAlignY=56&descSize=19" width="100%" alt="Leon, React Node.js TypeScript Go" />
 
 <a href="https://readme-typing-svg.demolab.com">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=3178C6&center=true&vCenter=true&width=620&lines=React+%2B+Next.js+%2B+TypeScript;Node.js+%2B+NestJS+%2B+PostgreSQL;Hybrid+RAG+search+over+pgvector;Row+Level+Security+enforced+in+the+database" alt="React + Next.js + TypeScript, Node.js + NestJS + PostgreSQL, hybrid RAG search over pgvector" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=3178C6&center=true&vCenter=true&width=620&lines=React+%2B+Next.js+%2B+TypeScript;Node.js+%2B+NestJS+%2B+PostgreSQL;Hybrid+RAG+search+over+pgvector;Row+Level+Security+enforced+in+the+database;Go+%2B+SQLite+in+a+single+static+binary" alt="React + Next.js + TypeScript, Node.js + NestJS + PostgreSQL, hybrid RAG search over pgvector, Go + SQLite in a single static binary" />
 </a>
 
 <br />
@@ -11,6 +11,7 @@
 <a href="https://www.linkedin.com/in/leon-wydra/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="https://notebook.dmn-software.com"><img src="https://img.shields.io/badge/NotebookLM_clone-3FCF8E?style=for-the-badge&logo=googledocs&logoColor=white" alt="NotebookLM clone, live" /></a>
 <a href="https://minigames.dmn-software.com"><img src="https://img.shields.io/badge/Minigames-FF6B00?style=for-the-badge&logo=gamejolt&logoColor=white" alt="Minigames, live" /></a>
+<a href="https://status.dmn-software.com"><img src="https://img.shields.io/badge/Status_page-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Status page, live" /></a>
 
 </div>
 
@@ -21,10 +22,13 @@
 **React, Node.js and TypeScript** across the whole stack: schema, API, interface, deployment.
 One language from the database driver up to the button, which means the types that describe a row
 are the same types the component renders. I like the systems where the hard part sits in the data
-layer, so retrieval, access control, and migrations that survive contact with production.
+layer, so retrieval, access control, and migrations that survive contact with production. Go is
+the newest addition, for the kind of service that should be one binary on a machine nobody logs
+into.
 
 - 🔍 **[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)**, Next.js and NestJS over Postgres with hybrid vector and full text retrieval. [Try it](https://notebook.dmn-software.com)
 - 🎮 **[dmn_minigame](https://github.com/DMN-Software/dmn_minigame)**, React and Node, with a leaderboard that cannot be lied to: the server replays your inputs and computes the score itself
+- 📡 **dmn-status**, a Go uptime service watching HTTP, TCP and FiveM targets, with a public page in German and English. [See it](https://status.dmn-software.com)
 - 🏗️ At work: a **platform for care professionals**, in daily use and shipped as a native iOS and Android app
 - 🧭 Before that: **technical coordination** for an LMS and an identity verification app used by around 130 German public health offices, both Laravel and React
 - 💼 Freelancing as **DMN Software** (sole proprietorship) on client projects in React, Vue and Lua
@@ -50,6 +54,7 @@ layer, so retrieval, access control, and migrations that survive contact with pr
 
 **Also shipped with**
 
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white)
 ![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
@@ -127,6 +132,31 @@ submits **the inputs it pressed**, and the server replays the run to compute the
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Source available](https://img.shields.io/badge/Source-available-lightgrey?style=flat-square)
 
+### 📡 dmn-status &nbsp;·&nbsp; [status page](https://status.dmn-software.com)
+
+> An uptime service that waits before it calls something down, and says how long it was gone.
+
+Self-hosted monitoring in Go. One binary, the standard library plus a CGO free SQLite driver and
+`x/crypto`, no JavaScript build step anywhere. The work sits in the check path and the state
+around it rather than in the page: a check resolves the hostname first and only then decides
+whether it may dial the address it got back, so a record that flips to a private IP between
+resolution and connect is refused. Source is not public.
+
+|  |  |
+|---|---|
+| **Checks** | HTTP with an expected status range and an optional keyword, plain TCP, and FXServer `info.json` / `players.json` for version and player count. Counts only, never names |
+| **Scheduling** | One goroutine per target with a random offset and jitter, at most eight checks in flight, shutdown through `context` |
+| **Incidents** | Opened after several consecutive failures rather than the first one, closed by the next success. Mail on both, the recovery carries the duration |
+| **History** | Raw results for 30 days, rolled up per hour after that. Availability over 24 h, 7 d and 30 d, a 90 hour bar and the latency curve, drawn server side as inline SVG |
+| **Hardening** | argon2id, `__Host-` cookies, CSRF over an origin check plus a masked token, login limited per IP, a CSP without inline code, `/metrics` behind a bearer token |
+| **Deployment** | distroless image with a read-only filesystem behind Caddy, `go test -race` and govulncheck in CI |
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white)
+![Source private](https://img.shields.io/badge/Source-private-lightgrey?style=flat-square)
+
 ---
 
 ## Where I have shipped
@@ -146,6 +176,7 @@ submits **the inputs it pressed**, and the server replays the run to compute the
 - **Ship it, then read the logs.** The care platform went to the store and gets used every day. That feedback beats any staging environment.
 - **Write down the parts that are hard to re-derive.** Why the retrieval is hybrid, why RRF and not a weighted score, [that kind of thing](https://github.com/Demonisreal/notebooklm-clone/blob/main/docs/hybrid-search.md).
 - **One codebase, both platforms.** Capacitor over a separate Swift and Kotlin app, as long as the product does not need the difference.
+- **Pin what I did not write.** Actions by commit SHA, base images by digest. A build that was green last month should still mean the same thing.
 
 ---
 
@@ -153,7 +184,8 @@ submits **the inputs it pressed**, and the server replays the run to compute the
 
 ### Open to interesting work
 
-React, Node.js and TypeScript, ideally somewhere the database is treated as part of the design.
+React, Node.js and TypeScript, lately Go for the services behind them, ideally somewhere the
+database is treated as part of the design.
 
 <a href="https://www.linkedin.com/in/leon-wydra/"><img src="https://img.shields.io/badge/Let%27s_talk-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Let's talk on LinkedIn" /></a>
 
