@@ -28,9 +28,9 @@ service that should be one binary on a machine nobody logs into, I write Go.
 - 🔍 **[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)**, Next.js and NestJS over Postgres with hybrid vector and full text retrieval. [Try it](https://notebook.dmn-software.com)
 - 🎮 **[dmn_minigame](https://github.com/DMN-Software/dmn_minigame)**, React and Node, with a leaderboard that cannot be lied to: the server replays your inputs and computes the score itself
 - 📡 **dmn-status**, a Go uptime service watching HTTP, TCP and FiveM targets, with a public page in German and English. [See it](https://status.dmn-software.com)
-- 🏗️ At work: a **platform for care professionals**, in daily use and shipped as a native iOS and Android app
-- 🧭 Before that: **technical coordination** for an LMS and an identity verification app used by around 130 German public health offices, both Laravel and React
-- 💼 Freelancing as **DMN Software** (sole proprietorship) on client projects in React, Vue and Lua
+- 💼 Working as **DMN Software** (sole proprietorship) for a handful of regular clients, in React, Vue, Lua and Go
+- 🏗️ Before that, as a full-stack developer: a **platform for care professionals**, in daily use and shipped as a native iOS and Android app
+- 🧭 And before that: **technical coordination** for an LMS and an identity verification app used by around 130 German public health offices, both Laravel and React
 - 📫 Best reached on [LinkedIn](https://www.linkedin.com/in/leon-wydra/)
 
 ---
@@ -162,17 +162,17 @@ resolution and connect is refused. Source is not public.
 
 |  | Role | What it was | Stack |
 |---|---|---|---|
-| **Now** | Full-Stack Developer | Platform for care professionals, in daily use and shipped as a native iOS and Android app | SvelteKit, Supabase, Capacitor |
+| **Now** | Owner, DMN Software | Sole proprietorship, work for a handful of regular clients | Lua, React, Vue, Go |
+| **Before** | Full-Stack Developer | Platform for care professionals, in daily use and shipped as a native iOS and Android app | SvelteKit, Supabase, Capacitor |
 | **Before** | Technical coordination | Learning management system | Laravel, React |
 | **Before** | Technical coordination | Identity verification app running at around 130 public health offices across Germany | Laravel, React |
-| **Alongside** | Owner, DMN Software | Individual client projects | Lua, React, Vue |
 
 ---
 
 ## How I work
 
 - **The schema comes first.** Constraints, foreign keys and Row Level Security in the database, so a bug in the API layer cannot turn into a data leak.
-- **Ship it, then read the logs.** The care platform went to the store and gets used every day. That feedback beats any staging environment.
+- **Ship it, then read the logs.** The care platform went to the store and is used every day. That feedback beats any staging environment.
 - **Write down the parts that are hard to re-derive.** Why the retrieval is hybrid, why RRF and not a weighted score, [that kind of thing](https://github.com/Demonisreal/notebooklm-clone/blob/main/docs/hybrid-search.md).
 - **One codebase, both platforms.** Capacitor over a separate Swift and Kotlin app, as long as the product does not need the difference.
 - **Pin what I did not write.** Actions by commit SHA, base images by digest. A build that was green last month should still mean the same thing.
