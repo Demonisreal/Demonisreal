@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=190&section=header&text=Leon&fontSize=54&fontColor=ffffff&fontAlignY=34&desc=React%20%C2%B7%20Node.js%20%C2%B7%20TypeScript%20%C2%B7%20Go&descAlignY=56&descSize=19" width="100%" alt="Leon, React Node.js TypeScript Go" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=190&section=header&text=Leon&fontSize=54&fontColor=ffffff&fontAlignY=34&desc=React%20%C2%B7%20Node.js%20%C2%B7%20TypeScript&descAlignY=56&descSize=19" width="100%" alt="Leon, React Node.js TypeScript" />
 
 <a href="https://readme-typing-svg.demolab.com">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=3178C6&center=true&vCenter=true&width=620&lines=React+%2B+Next.js+%2B+TypeScript;Node.js+%2B+NestJS+%2B+PostgreSQL;Hybrid+RAG+search+over+pgvector;Row+Level+Security+enforced+in+the+database;Go+%2B+SQLite+in+a+single+static+binary" alt="React + Next.js + TypeScript, Node.js + NestJS + PostgreSQL, hybrid RAG search over pgvector, Go + SQLite in a single static binary" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=3178C6&center=true&vCenter=true&width=620&lines=React+%2B+Next.js+%2B+TypeScript;Node.js+%2B+NestJS+%2B+PostgreSQL;Hybrid+RAG+search+over+pgvector;Row+Level+Security+enforced+in+the+database" alt="React + Next.js + TypeScript, Node.js + NestJS + PostgreSQL, hybrid RAG search over pgvector" />
 </a>
 
 <br />
@@ -22,9 +22,8 @@
 **React, Node.js and TypeScript** across the whole stack: schema, API, interface, deployment.
 One language from the database driver up to the button, which means the types that describe a row
 are the same types the component renders. I like the systems where the hard part sits in the data
-layer, so retrieval, access control, and migrations that survive contact with production. Go is
-the newest addition, for the kind of service that should be one binary on a machine nobody logs
-into.
+layer, so retrieval, access control, and migrations that survive contact with production. For a
+service that should be one binary on a machine nobody logs into, I write Go.
 
 - 🔍 **[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)**, Next.js and NestJS over Postgres with hybrid vector and full text retrieval. [Try it](https://notebook.dmn-software.com)
 - 🎮 **[dmn_minigame](https://github.com/DMN-Software/dmn_minigame)**, React and Node, with a leaderboard that cannot be lied to: the server replays your inputs and computes the score itself
@@ -184,8 +183,7 @@ resolution and connect is refused. Source is not public.
 
 ### Open to interesting work
 
-React, Node.js and TypeScript, lately Go for the services behind them, ideally somewhere the
-database is treated as part of the design.
+React, Node.js and TypeScript, ideally somewhere the database is treated as part of the design.
 
 <a href="https://www.linkedin.com/in/leon-wydra/"><img src="https://img.shields.io/badge/Let%27s_talk-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Let's talk on LinkedIn" /></a>
 
