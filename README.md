@@ -27,7 +27,7 @@ service that should be one binary on a machine nobody logs into, I write Go.
 
 - 🔍 **[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)**, Next.js and NestJS over Postgres with hybrid vector and full text retrieval. [Try it](https://notebook.dmn-software.com)
 - 🎮 **[dmn_minigame](https://github.com/DMN-Software/dmn_minigame)**, React and Node, with a leaderboard that cannot be lied to: the server replays your inputs and computes the score itself
-- 📡 **dmn-status**, a Go uptime service watching HTTP, TCP and FiveM targets, with a public page in German and English. [See it](https://status.dmn-software.com)
+- 📡 **[dmn-status](https://github.com/Demonisreal/dmn-status)**, a Go uptime service watching HTTP, TCP and FiveM targets, with a public page in German and English. [See it](https://status.dmn-software.com)
 - 💼 Working as **DMN Software** (sole proprietorship) for a handful of regular clients, in React, Vue, Lua and Go
 - 🏗️ Before that, as a full-stack developer: a **platform for care professionals**, in daily use and shipped as a native iOS and Android app
 - 🧭 And before that: **technical coordination** for an LMS and an identity verification app used by around 130 German public health offices, both Laravel and React
@@ -131,7 +131,7 @@ submits **the inputs it pressed**, and the server replays the run to compute the
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Source available](https://img.shields.io/badge/Source-available-lightgrey?style=flat-square)
 
-### 📡 dmn-status &nbsp;·&nbsp; [status page](https://status.dmn-software.com)
+### 📡 [dmn-status](https://github.com/Demonisreal/dmn-status) &nbsp;·&nbsp; [status page](https://status.dmn-software.com)
 
 > An uptime service that waits before it calls something down, and says how long it was gone.
 
@@ -139,7 +139,7 @@ Self-hosted monitoring in Go. One binary, the standard library plus a CGO free S
 `x/crypto`, no JavaScript build step anywhere. The work sits in the check path and the state
 around it rather than in the page: a check resolves the hostname first and only then decides
 whether it may dial the address it got back, so a record that flips to a private IP between
-resolution and connect is refused. Source is not public.
+resolution and connect is refused. The source can be read, but it is not licensed for reuse.
 
 |  |  |
 |---|---|
@@ -154,7 +154,7 @@ resolution and connect is refused. Source is not public.
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white)
-![Source private](https://img.shields.io/badge/Source-private-lightgrey?style=flat-square)
+![All rights reserved](https://img.shields.io/badge/License-All_rights_reserved-lightgrey?style=flat-square)
 
 ---
 
