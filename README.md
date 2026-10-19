@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=190&section=header&text=Leon&fontSize=54&fontColor=ffffff&fontAlignY=34&desc=React%20%C2%B7%20Node.js%20%C2%B7%20TypeScript&descAlignY=56&descSize=19" width="100%" alt="Leon, React Node.js TypeScript" />
 
 <a href="https://readme-typing-svg.demolab.com">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=3178C6&center=true&vCenter=true&width=620&lines=React+%2B+Next.js+%2B+TypeScript;Node.js+%2B+NestJS+%2B+PostgreSQL;Hybrid+RAG+search+over+pgvector;Row+Level+Security+enforced+in+the+database" alt="React + Next.js + TypeScript, Node.js + NestJS + PostgreSQL, hybrid RAG search over pgvector" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=3178C6&center=true&vCenter=true&width=620&lines=React+%2B+Next.js+%2B+TypeScript;Node.js+%2B+NestJS+%2B+PostgreSQL;Row+Level+Security+enforced+in+the+database;E-invoices+that+pass+the+KoSIT+validator;Hybrid+RAG+search+over+pgvector" alt="React + Next.js + TypeScript, Node.js + NestJS + PostgreSQL, Row Level Security in the database, e-invoices that pass the KoSIT validator, hybrid RAG search over pgvector" />
 </a>
 
 <br />
@@ -22,8 +22,10 @@
 **React, Node.js and TypeScript** across the whole stack: schema, API, interface, deployment.
 One language from the database driver up to the button, which means the types that describe a row
 are the same types the component renders. I like the systems where the hard part sits in the data
-layer, so retrieval, access control, and migrations that survive contact with production. For a
-service that should be one binary on a machine nobody logs into, I write Go.
+layer, so retrieval, access control, and migrations that survive contact with production. Lately
+that means business software with roles, approvals and a month-end close, where a wrong number is
+a legal problem and not just a bug. For a service that should be one binary on a machine nobody
+logs into, I write Go.
 
 - ⏱️ **[dmn-zeit](https://github.com/Demonisreal/dmn-zeit)**, NestJS, React and Postgres: working time, leave and invoices under German labour and tax law, with roles, approvals and a month-end close. [Try the demo](https://zeit-demo.dmn-software.com)
 - 🔍 **[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)**, Next.js and NestJS over Postgres with hybrid vector and full text retrieval. [Try it](https://notebook.dmn-software.com)
@@ -86,6 +88,32 @@ service that should be one binary on a machine nobody logs into, I write Go.
 ---
 
 ## Selected work
+
+### ⏱️ [dmn-zeit](https://github.com/Demonisreal/dmn-zeit) &nbsp;·&nbsp; [live demo](https://zeit-demo.dmn-software.com)
+
+> Working time, leave and invoices under German law, where every figure shows what it is made of.
+
+Time tracking for small businesses with flextime, plus a workspace for freelancers who bill by the
+hour. The demo builds a sandbox per visitor, a made-up tax office with twelve people and a
+freelancer next to it, and lets you switch between employee, team lead, HR, admin and freelancer
+without a password. A large part of the rules lives in Postgres itself, so the API cannot talk its
+way around them.
+
+|  |  |
+|---|---|
+| **Labour law** | Checks under §§ 3, 4, 5 and 9 ArbZG as notices with section and rule version, leave under the BUrlG with carry-over and expiry, flextime caps, public holidays of all 16 federal states |
+| **Invoices** | § 14 UStG with gap-free numbers from a locked counter row, reverse charge, small business, cancellation invoices, XRechnung and ZUGFeRD as PDF/A-3 |
+| **Integrity** | Append-only journals, a trigger locks closed months, `EXCLUDE USING gist` stops overlapping bookings, the clock time is the database's `now()` |
+| **Security** | RLS with `FORCE` per tenant, argon2id with pepper, passkeys and TOTP, step-up before issuing, a test that compares every route with a role matrix |
+| **Tests** | 1703 unit, 1000 integration against Postgres in Testcontainers, 20 Playwright runs on desktop and mobile, KoSIT and veraPDF on the generated invoices |
+| **Stack** | NestJS 11, Kysely, PostgreSQL 17, React 19, TanStack Router and Query, React Aria, Vite, German and English |
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![All rights reserved](https://img.shields.io/badge/License-All_rights_reserved-lightgrey?style=flat-square)
 
 ### 📓 [notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone) &nbsp;·&nbsp; [live demo](https://notebook.dmn-software.com)
 
@@ -172,10 +200,19 @@ resolution and connect is refused. The source can be read, but it is not license
 ## How I work
 
 - **The schema comes first.** Constraints, foreign keys and Row Level Security in the database, so a bug in the API layer cannot turn into a data leak.
+- **Rules without a clock.** In dmn-zeit the labour law sits in a package with no I/O where "now" is a parameter, so a shift across the night the clocks change is an ordinary unit test.
 - **Ship it, then read the logs.** The care platform went to the store and is used every day. That feedback beats any staging environment.
 - **Write down the parts that are hard to re-derive.** Why the retrieval is hybrid, why RRF and not a weighted score, [that kind of thing](https://github.com/Demonisreal/notebooklm-clone/blob/main/docs/hybrid-search.md).
 - **One codebase, both platforms.** Capacitor over a separate Swift and Kotlin app, as long as the product does not need the difference.
 - **Pin what I did not write.** Actions by commit SHA, base images by digest. A build that was green last month should still mean the same thing.
+
+---
+
+## Using the code
+
+The repositories here are public so you can read them. Apart from notebooklm-clone, which is MIT
+licensed, all rights are reserved: no use, copying, modification or redistribution, in whole or in
+part, without my written permission. That includes dmn-zeit, dmn-status and dmn_minigame.
 
 ---
 
