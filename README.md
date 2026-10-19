@@ -8,7 +8,7 @@
 
 <br />
 
-<a href="https://www.linkedin.com/in/leon-wydra/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://zeit-demo.dmn-software.com"><img src="https://img.shields.io/badge/DMN_Zeit-D7263D?style=for-the-badge&logo=clockify&logoColor=white" alt="DMN Zeit demo, live" /></a>
 <a href="https://notebook.dmn-software.com"><img src="https://img.shields.io/badge/NotebookLM_clone-3FCF8E?style=for-the-badge&logo=googledocs&logoColor=white" alt="NotebookLM clone, live" /></a>
 <a href="https://minigames.dmn-software.com"><img src="https://img.shields.io/badge/Minigames-FF6B00?style=for-the-badge&logo=gamejolt&logoColor=white" alt="Minigames, live" /></a>
 <a href="https://status.dmn-software.com"><img src="https://img.shields.io/badge/Status_page-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Status page, live" /></a>
@@ -25,13 +25,13 @@ are the same types the component renders. I like the systems where the hard part
 layer, so retrieval, access control, and migrations that survive contact with production. For a
 service that should be one binary on a machine nobody logs into, I write Go.
 
+- ⏱️ **[dmn-zeit](https://github.com/Demonisreal/dmn-zeit)**, NestJS, React and Postgres: working time, leave and invoices under German labour and tax law, with roles, approvals and a month-end close. [Try the demo](https://zeit-demo.dmn-software.com)
 - 🔍 **[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)**, Next.js and NestJS over Postgres with hybrid vector and full text retrieval. [Try it](https://notebook.dmn-software.com)
 - 🎮 **[dmn_minigame](https://github.com/DMN-Software/dmn_minigame)**, React and Node, with a leaderboard that cannot be lied to: the server replays your inputs and computes the score itself
 - 📡 **[dmn-status](https://github.com/Demonisreal/dmn-status)**, a Go uptime service watching HTTP, TCP and FiveM targets, with a public page in German and English. [See it](https://status.dmn-software.com)
 - 💼 Working as **DMN Software** (sole proprietorship) for a handful of regular clients, in React, Vue, Lua and Go
 - 🏗️ Before that, as a full-stack developer: a **platform for care professionals**, in daily use and shipped as a native iOS and Android app
 - 🧭 And before that: **technical coordination** for an LMS and an identity verification app used by around 130 German public health offices, both Laravel and React
-- 📫 Best reached on [LinkedIn](https://www.linkedin.com/in/leon-wydra/)
 
 ---
 
@@ -184,8 +184,6 @@ resolution and connect is refused. The source can be read, but it is not license
 ### Open to interesting work
 
 React, Node.js and TypeScript, ideally somewhere the database is treated as part of the design.
-
-<a href="https://www.linkedin.com/in/leon-wydra/"><img src="https://img.shields.io/badge/Let%27s_talk-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Let's talk on LinkedIn" /></a>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=110&section=footer" width="100%" alt="" />
 
