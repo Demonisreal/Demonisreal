@@ -135,7 +135,7 @@ and the fact that authorisation is enforced by the database rather than by the A
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-![MIT](https://img.shields.io/badge/License-MIT-informational?style=flat-square)
+![All rights reserved](https://img.shields.io/badge/License-All_rights_reserved-lightgrey?style=flat-square)
 
 ### 🎮 [dmn_minigame](https://github.com/DMN-Software/dmn_minigame) &nbsp;·&nbsp; [play it](https://minigames.dmn-software.com)
 
@@ -210,9 +210,9 @@ resolution and connect is refused. The source can be read, but it is not license
 
 ## Using the code
 
-The repositories here are public so you can read them. Apart from notebooklm-clone, which is MIT
-licensed, all rights are reserved: no use, copying, modification or redistribution, in whole or in
-part, without my written permission. That includes dmn-zeit, dmn-status and dmn_minigame.
+The repositories here are public so you can read them, not so you can reuse them. All rights are
+reserved: no use, copying, modification or redistribution, in whole or in part, without my written
+permission. That covers dmn-zeit, notebooklm-clone, dmn-status and dmn_minigame.
 
 ---
 
@@ -221,6 +221,8 @@ part, without my written permission. That includes dmn-zeit, dmn-status and dmn_
 ### Open to interesting work
 
 React, Node.js and TypeScript, ideally somewhere the database is treated as part of the design.
+
+<a href="mailto:kontakt@dmn-software.com"><img src="https://img.shields.io/badge/kontakt%40dmn--software.com-D7263D?style=for-the-badge" alt="Mail kontakt@dmn-software.com" /></a>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=110&section=footer" width="100%" alt="" />
 
