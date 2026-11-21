@@ -9,9 +9,9 @@
 <br />
 
 <a href="https://zeit-demo.dmn-software.com"><img src="https://img.shields.io/badge/DMN_Zeit-D7263D?style=for-the-badge&logo=clockify&logoColor=white" alt="DMN Zeit demo, live" /></a>
+<a href="https://ledger.dmn-software.com"><img src="https://img.shields.io/badge/Ledger_demo-6C4AB6?style=for-the-badge&logo=go&logoColor=white" alt="dmn-ledger demo, live" /></a>
 <a href="https://notebook.dmn-software.com"><img src="https://img.shields.io/badge/NotebookLM_clone-3FCF8E?style=for-the-badge&logo=googledocs&logoColor=white" alt="NotebookLM clone, live" /></a>
 <a href="https://minigames.dmn-software.com"><img src="https://img.shields.io/badge/Minigames-FF6B00?style=for-the-badge&logo=gamejolt&logoColor=white" alt="Minigames, live" /></a>
-<a href="https://ledger.dmn-software.com"><img src="https://img.shields.io/badge/Ledger_demo-6C4AB6?style=for-the-badge&logo=go&logoColor=white" alt="dmn-ledger demo, live" /></a>
 <a href="https://status.dmn-software.com"><img src="https://img.shields.io/badge/Status_page-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Status page, live" /></a>
 
 </div>
@@ -29,9 +29,9 @@ a legal problem and not just a bug. For a service that should be one binary on a
 logs into, I write Go.
 
 - ⏱️ **[dmn-zeit](https://github.com/Demonisreal/dmn-zeit)**, NestJS, React and Postgres: working time, leave and invoices under German labour and tax law, with roles, approvals and a month-end close. [Try the demo](https://zeit-demo.dmn-software.com)
+- 📒 **[dmn-ledger](https://github.com/Demonisreal/dmn-ledger)**, a replicated double-entry ledger in Go with its own Raft and write-ahead log. Its simulator and tests have to find 22 planted bugs. [Break it](https://ledger.dmn-software.com)
 - 🔍 **[notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone)**, Next.js and NestJS over Postgres with hybrid vector and full text retrieval. [Try it](https://notebook.dmn-software.com)
 - 🎮 **[dmn_minigame](https://github.com/DMN-Software/dmn_minigame)**, React and Node, with a leaderboard that cannot be lied to: the server replays your inputs and computes the score itself
-- 📒 **[dmn-ledger](https://github.com/Demonisreal/dmn-ledger)**, a replicated double-entry ledger in Go with its own Raft and write-ahead log. Its simulator and tests have to find 22 planted bugs. [Break it](https://ledger.dmn-software.com)
 - 📡 **[dmn-status](https://github.com/Demonisreal/dmn-status)**, a Go uptime service watching HTTP, TCP and game server (FXServer) targets, with a public page in German and English. [See it](https://status.dmn-software.com)
 - 💼 Working as **DMN Software** (sole proprietorship) for a handful of regular clients, in React, Vue, Lua and Go
 - 🏗️ Before that, as a full-stack developer: a **platform for care professionals**, in daily use and shipped as a native iOS and Android app
@@ -117,6 +117,34 @@ way around them.
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![All rights reserved](https://img.shields.io/badge/License-All_rights_reserved-lightgrey?style=flat-square)
 
+### 📒 [dmn-ledger](https://github.com/Demonisreal/dmn-ledger) &nbsp;·&nbsp; [live demo](https://ledger.dmn-software.com)
+
+> Double-entry bookkeeping on three or five nodes that loses no acknowledged transfer and books none twice, as long as a majority is up.
+
+A replicated ledger in Go with its own Raft and its own write-ahead log, no consensus library
+underneath. That promise has to hold when nodes crash in the middle of a write, when messages are
+lost or reordered, when the network splits, when clocks are wrong and when a disk returns broken
+data. It is checked, not proven: a deterministic simulator runs the real node code against those
+faults and judges every run. In the demo you can kill a node, freeze it, cut it off or flip a bit
+in its log, and then watch the whole ledger being counted again.
+
+|  |  |
+|---|---|
+| **Ledger** | Accounts and transfers, pending transfers that are posted, voided or expire, linked chains that succeed or fail as a whole, exactly-once through client sessions |
+| **Consensus** | Raft core without I/O: pre-vote, check-quorum, ReadIndex for linearizable reads, snapshots for followers that fell behind |
+| **Storage** | Segmented WAL with checksums and torn-write handling. A node that finds a flipped bit in data it had acknowledged stops voting until the leader has repaired it |
+| **Testing** | Deterministic simulator with network, disk and clock faults, checkers for safety and linearizability, 22 planted bugs the tests have to find, a chaos test with three real processes under `kill -9` and `SIGSTOP` |
+| **Audit trail** | Hash chain over batches, a Merkle tree per batch, receipts stamped with Ed25519 that anyone can check offline, in Go or with WebCrypto in the browser |
+| **Interfaces** | `ledgerd` with its own binary protocol over TCP, a Go SDK that retries across nodes and tells "not sent" from "outcome unknown", `ledgerctl` on the command line |
+| **Measured** | Open load against Postgres on the same laptop, raw data in the repo. At a load both hold, Postgres answers faster. One node held 256,000 transfers a second, batched Postgres 32,000 |
+| **Not yet** | TLS, authentication, membership changes. The README says what each gap means today |
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Raft](https://img.shields.io/badge/Raft-6C4AB6?style=flat-square)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white)
+![All rights reserved](https://img.shields.io/badge/License-All_rights_reserved-lightgrey?style=flat-square)
+
 ### 📓 [notebooklm-clone](https://github.com/Demonisreal/notebooklm-clone) &nbsp;·&nbsp; [live demo](https://notebook.dmn-software.com)
 
 > Upload your sources, chat with them, and trace every sentence of the answer back to the passage it came from.
@@ -159,34 +187,6 @@ submits **the inputs it pressed**, and the server replays the run to compute the
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Fastify](https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=fastify&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![All rights reserved](https://img.shields.io/badge/License-All_rights_reserved-lightgrey?style=flat-square)
-
-### 📒 [dmn-ledger](https://github.com/Demonisreal/dmn-ledger) &nbsp;·&nbsp; [live demo](https://ledger.dmn-software.com)
-
-> Double-entry bookkeeping on three or five nodes that loses no acknowledged transfer and books none twice, as long as a majority is up.
-
-A replicated ledger in Go with its own Raft and its own write-ahead log, no consensus library
-underneath. That promise has to hold when nodes crash in the middle of a write, when messages are
-lost or reordered, when the network splits, when clocks are wrong and when a disk returns broken
-data. It is checked, not proven: a deterministic simulator runs the real node code against those
-faults and judges every run. In the demo you can kill a node, freeze it, cut it off or flip a bit
-in its log, and then watch the whole ledger being counted again.
-
-|  |  |
-|---|---|
-| **Ledger** | Accounts and transfers, pending transfers that are posted, voided or expire, linked chains that succeed or fail as a whole, exactly-once through client sessions |
-| **Consensus** | Raft core without I/O: pre-vote, check-quorum, ReadIndex for linearizable reads, snapshots for followers that fell behind |
-| **Storage** | Segmented WAL with checksums and torn-write handling. A node that finds a flipped bit in data it had acknowledged stops voting until the leader has repaired it |
-| **Testing** | Deterministic simulator with network, disk and clock faults, checkers for safety and linearizability, 22 planted bugs the tests have to find, a chaos test with three real processes under `kill -9` and `SIGSTOP` |
-| **Audit trail** | Hash chain over batches, a Merkle tree per batch, receipts stamped with Ed25519 that anyone can check offline, in Go or with WebCrypto in the browser |
-| **Interfaces** | `ledgerd` with its own binary protocol over TCP, a Go SDK that retries across nodes and tells "not sent" from "outcome unknown", `ledgerctl` on the command line |
-| **Measured** | Open load against Postgres on the same laptop, raw data in the repo. At a load both hold, Postgres answers faster. One node held 256,000 transfers a second, batched Postgres 32,000 |
-| **Not yet** | TLS, authentication, membership changes. The README says what each gap means today |
-
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![Raft](https://img.shields.io/badge/Raft-6C4AB6?style=flat-square)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white)
 ![All rights reserved](https://img.shields.io/badge/License-All_rights_reserved-lightgrey?style=flat-square)
 
 ### 📡 [dmn-status](https://github.com/Demonisreal/dmn-status) &nbsp;·&nbsp; [status page](https://status.dmn-software.com)
