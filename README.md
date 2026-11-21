@@ -107,7 +107,7 @@ way around them.
 | **Invoices** | § 14 UStG with gap-free numbers from a locked counter row, reverse charge, small business, cancellation invoices, XRechnung and ZUGFeRD as PDF/A-3 |
 | **Integrity** | Append-only journals, a trigger locks closed months, `EXCLUDE USING gist` stops overlapping bookings, the clock time is the database's `now()` |
 | **Security** | RLS with `FORCE` per tenant, argon2id with pepper, passkeys and TOTP, step-up before issuing, a test that compares every route with a role matrix |
-| **Tests** | 1703 unit, 1000 integration against Postgres in Testcontainers, 20 Playwright runs on desktop and mobile, KoSIT and veraPDF on the generated invoices |
+| **Tests** | 1709 unit, 1006 integration against Postgres in Testcontainers, 20 Playwright runs on desktop and mobile, KoSIT and veraPDF on the generated invoices |
 | **Stack** | NestJS 11, Kysely, PostgreSQL 17, React 19, TanStack Router and Query, React Aria, Vite, German and English |
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
